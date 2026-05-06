@@ -127,8 +127,17 @@ a { color: var(--b-green); text-decoration: none; }
 .quote-section {
   padding: 2.5rem 0; background: var(--b-gold-soft);
 }
+.quote-section__inner {
+  display: flex; align-items: center; gap: 2.5rem;
+  max-width: 900px; margin: 0 auto;
+}
+.quote-section__photo {
+  flex-shrink: 0; width: 160px; height: 160px; border-radius: 50%; overflow: hidden;
+}
+.quote-section__photo img {
+  width: 100%; height: 100%; object-fit: cover;
+}
 .quote-block {
-  max-width: 740px; margin: 0 auto;
   border-left: 4px solid var(--b-gold); padding-left: 1.5rem;
 }
 .quote-block p {
@@ -229,15 +238,15 @@ a { color: var(--b-green); text-decoration: none; }
   .hero__inner { grid-template-columns: 1fr; text-align: center; }
   .hero__sub { max-width: 100%; }
   .hero__actions { justify-content: center; }
-  .hero__person { order: -1; }
-  .hero__photo { width: 140px; height: 140px; }
   .card-grid { grid-template-columns: 1fr; }
   .steps { flex-direction: column; align-items: center; gap: 1rem; }
   .step__connector { width: 2px; height: 20px; margin: 0; }
   .trust-bar__inner { flex-direction: column; align-items: center; gap: 0.5rem; }
   .site-header__nav { display: none; }
   .site-footer__inner { grid-template-columns: 1fr; }
-  .quote-block { padding-left: 1rem; }
+  .quote-section__inner { flex-direction: column; text-align: center; }
+  .quote-section__photo { width: 120px; height: 120px; }
+  .quote-block { padding-left: 1rem; border-left: none; border-top: 4px solid var(--b-gold); padding-top: 1rem; }
 }
 
 @media (prefers-reduced-motion: reduce) {

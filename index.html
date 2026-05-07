@@ -20,7 +20,7 @@
     "areaServed": { "@type": "State", "name": "California" },
     "description": "Expert DBQ evaluations and nexus letters for California veterans by former VA professionals."
   }</script>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link href="cup-bundle.css" rel="stylesheet">
   <link href="cup.css" rel="stylesheet">
   <link href="dbq-b.css" rel="stylesheet">
@@ -30,7 +30,7 @@
 
   <a href="#main" class="skip-link">Skip to main content</a>
 
-  <!-- Header -->
+  <!-- Header: Navy thick bottom border -->
   <header class="site-header">
     <div class="site-header__inner container">
       <a href="index.html" class="site-header__logo" aria-label="DBQ Help Home">
@@ -43,54 +43,68 @@
         <a href="faq.html">FAQ</a>
         <a href="contact.html">Contact</a>
       </nav>
-      <a href="tel:+13105718904" class="site-header__phone">310-571-8904</a>
+      <a href="tel:+13105718904" class="site-header__phone btn btn--gold-sm">310-571-8904</a>
     </div>
   </header>
 
   <main id="main">
 
-    <!-- Hero: Dark navy-teal, calm authority -->
+    <!-- HERO B: Full-width dark, bold type, NO photo -->
     <section class="hero" aria-labelledby="hero-heading">
       <div class="hero__inner container">
-        <div class="hero__content">
-          <h1 id="hero-heading">Expert disability evaluations for California veterans.</h1>
-          <p class="hero__sub">Former VA raters who know exactly what your claim needs.</p>
+        <h1 id="hero-heading">Your claim deserves<br>the right documentation.</h1>
+        <p class="hero__sub">Former VA raters and licensed medical examiners — the team that knows exactly what the VA needs to approve your disability claim.</p>
+        <div class="hero__actions">
           <a href="tel:+13105718904" class="btn btn--gold">Call 310-571-8904</a>
-          <p class="hero__alt-action">or <a href="contact.html">schedule online</a></p>
+          <a href="contact.html" class="btn btn--outline-light">Schedule Evaluation</a>
         </div>
       </div>
     </section>
 
-    <!-- Trust Bar -->
-    <section class="trust-bar" aria-label="Credentials">
-      <div class="trust-bar__inner container">
-        <div class="trust-bar__item"><span class="trust-star">★</span> Licensed Medical Examiners</div>
-        <div class="trust-bar__item"><span class="trust-star">★</span> Former VA Raters on Staff</div>
-        <div class="trust-bar__item"><span class="trust-star">★</span> Serving California Veterans</div>
-        <div class="trust-bar__item"><span class="trust-star">★</span> Mon–Fri 9am–5pm PST</div>
-      </div>
-    </section>
-
-    <!-- Quote: standalone section -->
-    <section class="quote-section" aria-label="Message from Dr. Greene">
-      <div class="container">
-        <div class="quote-section__inner">
-          <div class="quote-section__photo">
-            <img src="img/dr-greene.png" alt="Dr. Eric Greene, PsyD" width="436" height="436">
-          </div>
-          <blockquote class="quote-block">
-            <p>"Every veteran who served this country deserves to have their service-connected conditions properly documented. We know exactly what the VA needs to see because we used to be the ones reviewing these claims."</p>
-            <footer>
-              <strong>Dr. Eric Greene, PsyD</strong>
-              <span>CEO & Licensed Psychologist</span>
-            </footer>
-          </blockquote>
+    <!-- UNIQUE TO B: Credential badges -->
+    <section class="credentials" aria-label="Our credentials">
+      <div class="credentials__inner container">
+        <div class="credential">
+          <div class="credential__icon">🏛️</div>
+          <h3>Former VA Raters</h3>
+          <p>Staff who previously rated disability claims at the VA.</p>
+        </div>
+        <div class="credential">
+          <div class="credential__icon">🩺</div>
+          <h3>Licensed Examiners</h3>
+          <p>Every evaluation conducted by a licensed medical professional.</p>
+        </div>
+        <div class="credential">
+          <div class="credential__icon">📖</div>
+          <h3>M21-1 Current</h3>
+          <p>Always up-to-date with the VA's latest rating procedures.</p>
+        </div>
+        <div class="credential">
+          <div class="credential__icon">🗺️</div>
+          <h3>All of California</h3>
+          <p>Serving veterans across the entire state.</p>
         </div>
       </div>
     </section>
 
-    <!-- Services -->
-    <section class="section" aria-labelledby="services-heading">
+    <!-- Large pullquote with photo (unique style) -->
+    <section class="pullquote" aria-label="From Dr. Greene">
+      <div class="pullquote__inner container">
+        <div class="pullquote__photo">
+          <img src="img/dr-greene.png" alt="Dr. Eric Greene, PsyD" width="436" height="436">
+        </div>
+        <blockquote class="pullquote__text">
+          <p>"Every veteran who served this country deserves to have their service-connected conditions properly documented."</p>
+          <footer>
+            <strong>Dr. Eric Greene, PsyD</strong>
+            <span>CEO &amp; Licensed Psychologist</span>
+          </footer>
+        </blockquote>
+      </div>
+    </section>
+
+    <!-- Services: dark header cards -->
+    <section class="section section--alt" aria-labelledby="services-heading">
       <div class="container">
         <div class="section__header">
           <h2 id="services-heading">What We Do</h2>
@@ -98,89 +112,71 @@
         </div>
         <div class="card-grid">
           <div class="card">
-            <div class="card__bar"></div>
-            <h3>DBQ Evaluations</h3>
+            <div class="card__header">DBQ Evaluations</div>
             <p>Thorough Disability Benefits Questionnaire evaluations conducted by licensed medical examiners. We document your condition accurately for your VA claim.</p>
           </div>
           <div class="card">
-            <div class="card__bar"></div>
-            <h3>Nexus Letters</h3>
+            <div class="card__header">Nexus Letters</div>
             <p>Professional nexus letters establishing the connection between your military service and current medical conditions. Critical evidence for your claim.</p>
           </div>
           <div class="card">
-            <div class="card__bar"></div>
-            <h3>Veteran Guidance</h3>
+            <div class="card__header">Veteran Guidance</div>
             <p>Personalized support navigating the VA disability claims process. We help you understand what to expect and prepare for every step.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Process -->
-    <section class="section section--alt" aria-labelledby="process-heading">
+    <!-- Process: vertical stacked -->
+    <section class="section" aria-labelledby="process-heading">
       <div class="container">
         <div class="section__header">
           <h2 id="process-heading">The Process</h2>
-          <p>Three steps from contact to completed documentation.</p>
         </div>
-        <div class="steps">
-          <div class="step">
-            <div class="step__num">1</div>
-            <h3>Contact Us</h3>
-            <p>Call 310-571-8904 or fill out our contact form. We'll discuss your needs and schedule your evaluation.</p>
+        <div class="process">
+          <div class="process__step">
+            <div class="process__num">01</div>
+            <div class="process__body">
+              <h3>Contact Us</h3>
+              <p>Call 310-571-8904 or fill out our contact form. We'll discuss your needs and schedule your evaluation.</p>
+            </div>
           </div>
-          <div class="step__connector"></div>
-          <div class="step">
-            <div class="step__num">2</div>
-            <h3>Get Evaluated</h3>
-            <p>A licensed medical examiner conducts a thorough, compassionate evaluation and reviews your records.</p>
+          <div class="process__step">
+            <div class="process__num">02</div>
+            <div class="process__body">
+              <h3>Get Evaluated</h3>
+              <p>A licensed medical examiner conducts a thorough, compassionate evaluation and reviews your records.</p>
+            </div>
           </div>
-          <div class="step__connector"></div>
-          <div class="step">
-            <div class="step__num">3</div>
-            <h3>Receive Your DBQ</h3>
-            <p>We complete your Disability Benefits Questionnaire with all necessary documentation for your VA claim.</p>
+          <div class="process__step">
+            <div class="process__num">03</div>
+            <div class="process__body">
+              <h3>Receive Your DBQ</h3>
+              <p>We complete your Disability Benefits Questionnaire with all necessary documentation for your VA claim.</p>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Team -->
-    <section class="section" aria-labelledby="team-heading">
-      <div class="container">
-        <div class="section__header">
-          <h2 id="team-heading">Built by VA Professionals</h2>
-          <p>Former VA Raters & Licensed Medical Examiners</p>
-        </div>
-        <div class="team-note">
-          <p><strong>DBQ Help only hires former VA Raters and other VA professionals.</strong> The M21-1 Procedure Manual for Rating is updated every Friday and our team of experts always ensures you're getting the most up-to-date information.</p>
-          <a href="about.html" class="btn btn--outline">Learn More About Our Team</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- CTA -->
+    <!-- CTA: bold navy -->
     <section class="cta" aria-labelledby="cta-heading">
       <div class="container">
-        <h2 id="cta-heading">Your claim deserves the right documentation.</h2>
-        <p>Let former VA professionals prepare your evaluation.</p>
+        <h2 id="cta-heading">Let former VA professionals handle your evaluation.</h2>
         <div class="cta__actions">
-          <a href="tel:+13105718904" class="btn btn--gold">Call 310-571-8904</a>
-          <a href="mailto:info@dbqhelp.com" class="btn btn--outline-light">Email Us</a>
-          <a href="contact.html" class="btn btn--outline-light">Contact Form</a>
+          <a href="tel:+13105718904" class="btn btn--gold btn--lg">Call 310-571-8904</a>
+          <a href="contact.html" class="btn btn--outline-light btn--lg">Schedule Online</a>
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- Footer -->
   <footer class="site-footer">
     <div class="site-footer__inner container">
       <div class="site-footer__col">
         <h3>DBQ Help</h3>
         <p>Veteran disability evaluations by former VA professionals.</p>
-        <p>Empowering veterans to secure the disability benefits they've earned through service.</p>
       </div>
       <div class="site-footer__col">
         <h3>Quick Links</h3>
@@ -197,11 +193,8 @@
         <p>Mon–Fri, 9am–5pm PST</p>
       </div>
     </div>
-    <div class="site-footer__bottom">
-      <p>&copy; 2026 DBQ Help. All rights reserved.</p>
-    </div>
+    <div class="site-footer__bottom"><p>&copy; 2026 DBQ Help. All rights reserved.</p></div>
   </footer>
-
   <script src="dbq-app.js"></script>
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
   <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}gtag("js",new Date);gtag("config","G-XXXXXXXXXX")</script>
